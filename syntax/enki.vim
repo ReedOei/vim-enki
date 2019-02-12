@@ -17,15 +17,15 @@ let b:current_syntax = "enki"
 
 syntax match ifItHas 'if it has'
 syntax match becauseItHas 'because it has'
-syntax match posulateKeyword 'postulate'
-syntax match thenKeyword 'then'
-syntax match hasKeyword 'has'
-syntax match isKeyword 'is'
-syntax match whereKeyword 'where'
+syntax keyword posulateKeyword postulate
+syntax keyword thenKeyword then
+syntax keyword hasKeyword has
+syntax keyword isKeyword is
+syntax keyword whereKeyword where
 syntax match typeclassDef 'is a type of'
 syntax match sumTypeDef 'may be'
 syntax keyword whenKeyword when otherwise
-syntax match ifKeyword 'if'
+syntax keyword ifKeyword if
 
 syntax match hole '_[A-Z]*[a-z]*\>'
 
