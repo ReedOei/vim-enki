@@ -41,6 +41,8 @@ syntax match num '#\?[-+]\?\d\+'
 syntax region string start='"' end='"' skip='\\"'
 syntax region string start='\'' end='\'' skip='\\\''
 
+syntax keyword type int bool string
+
 hi def link ifItHas Statement
 hi def link whereKeyword Statement
 hi def link posulateKeyword Statement
@@ -57,6 +59,7 @@ hi def link thenKeyword Conditional
 
 hi def link hole Constant
 
+hi def link type Function
 hi def link variable Type
 hi def link num Constant
 hi def link comment Comment
