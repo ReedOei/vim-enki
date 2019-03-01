@@ -22,6 +22,7 @@ syntax keyword thenKeyword then
 syntax keyword hasKeyword has
 syntax keyword isKeyword is
 syntax keyword importing use from
+syntax match noImport 'do not use'
 syntax keyword whereKeyword where
 syntax match typeclassDef 'is a type of'
 syntax match sumTypeDef 'may be'
