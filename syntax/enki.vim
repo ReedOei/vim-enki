@@ -58,6 +58,8 @@ hi def link notUnification Statement
 hi def link whenKeyword Conditional
 hi def link ifKeyword Conditional
 hi def link thenKeyword Conditional
+hi def link importing PreProc
+hi def link noImport PreProc
 
 hi def link hole Constant
 
