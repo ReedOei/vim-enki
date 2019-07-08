@@ -34,6 +34,8 @@ syntax match hole '_[A-Z]*[a-z]*\>'
 syntax match unification '='
 syntax match notUnification '/='
 
+syntax match operator '[+-/*<>]'
+
 syntax match variable '\<[A-Z][A-Za-z0-9]*'
 
 syntax match comment "--.*$"
@@ -44,6 +46,8 @@ syntax region string start='"' end='"' skip='\\"'
 syntax region string start='\'' end='\'' skip='\\\''
 
 syntax keyword type int bool string
+
+hi def link operator Operator
 
 hi def link ifItHas Statement
 hi def link whereKeyword Statement
