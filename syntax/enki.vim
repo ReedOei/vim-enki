@@ -21,7 +21,9 @@ syntax keyword posulateKeyword postulate
 syntax keyword thenKeyword then
 syntax keyword hasKeyword has
 syntax keyword isKeyword is
-syntax keyword importing use from
+syntax keyword importing use nextgroup=moduleId skipwhite
+syntax match moduleId '[A-Za-z][a-zA-Z0-9_]*' skipwhite contained nextgroup=importFrom
+syntax keyword importFrom from contained
 syntax match noImport 'do not use'
 syntax keyword whereKeyword where
 syntax match typeclassDef 'is a type of'
@@ -34,6 +36,8 @@ syntax match hole '_[A-Z]*[a-z]*\>'
 syntax match unification '='
 syntax match notUnification '/='
 
+syntax match operator '[+-/*<>]'
+
 syntax match variable '\<[A-Z][A-Za-z0-9]*'
 
 syntax match comment "--.*$"
@@ -44,6 +48,8 @@ syntax region string start='"' end='"' skip='\\"'
 syntax region string start='\'' end='\'' skip='\\\''
 
 syntax keyword type int bool string
+
+hi def link operator Operator
 
 hi def link ifItHas Statement
 hi def link whereKeyword Statement
@@ -59,6 +65,7 @@ hi def link whenKeyword Conditional
 hi def link ifKeyword Conditional
 hi def link thenKeyword Conditional
 hi def link importing PreProc
+hi def link importFrom PreProc
 hi def link noImport PreProc
 
 hi def link hole Constant
