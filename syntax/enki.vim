@@ -31,7 +31,7 @@ syntax match sumTypeDef 'may be'
 syntax keyword whenKeyword when otherwise
 syntax keyword ifKeyword if
 
-syntax match hole '_[A-Z]*[a-z]*\>'
+syntax match hole '\<_[A-Z]*[a-z]*\>'
 
 syntax match unification '='
 syntax match notUnification '/='
