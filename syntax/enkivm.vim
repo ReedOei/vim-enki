@@ -15,7 +15,7 @@ endif
 
 let b:current_syntax = "enkivm"
 
-syntax keyword opcode goto fail print fresh gotochoice unify dup disunify pop nameof project functor swap add sub div mul pow lt lte gt gte rot over printstack printunification position var str int
+syntax keyword opcode goto fail print fresh gotochoice unify dup disunify pop nameof project functor swap add sub div mul pow lt lte gt gte rot over printstack printunification position var str int destroy
 syntax match num '#\?[-+]\?\d\+'
 syntax match comment "#.*$"
 
