@@ -19,7 +19,11 @@ syntax keyword opcode goto fail print fresh gotochoice unify dup disunify pop na
 syntax match num '#\?[-+]\?\d\+'
 syntax match comment "#.*$"
 
+syntax region string start='"' end='"' skip='\\"'
+syntax region string start='\'' end='\'' skip='\\\''
+
 hi def link opcode Statement
 hi def link num Constant
 hi def link comment Comment
+hi def link string String
 
