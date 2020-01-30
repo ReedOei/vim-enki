@@ -36,7 +36,7 @@ syntax match hole '\<_[A-Z]*[a-z]*\>'
 syntax match unification '='
 syntax match notUnification '/='
 
-syntax match operator '[+-/*<>]'
+syntax match operator '[+-/*<>\|:]'
 
 syntax match variable '\<[A-Z][A-Za-z0-9]*'
 
