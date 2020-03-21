@@ -18,17 +18,19 @@ let b:current_syntax = "enki"
 syntax match ifItHas 'if it has'
 syntax match becauseItHas 'because it has'
 syntax keyword posulateKeyword postulate
-syntax keyword thenKeyword then
 syntax keyword hasKeyword has
-syntax keyword isKeyword is
+syntax keyword isKeyword is are
+syntax keyword asKeyword as
 syntax keyword importing use nextgroup=moduleId skipwhite
 syntax match moduleId '[A-Za-z][a-zA-Z0-9_]*' skipwhite contained nextgroup=importFrom
 syntax keyword importFrom from contained
 syntax match noImport 'do not use'
+syntax match defineAlias 'define alias'
+syntax match builtIn 'built in'
 syntax keyword whereKeyword where
 syntax match typeclassDef 'is a type of'
 syntax match sumTypeDef 'may be'
-syntax keyword whenKeyword when otherwise
+syntax keyword whenKeyword when default then
 syntax keyword ifKeyword if
 
 syntax match hole '\<_[A-Z]*[a-z]*\>'
@@ -57,13 +59,15 @@ hi def link posulateKeyword Statement
 hi def link becauseItHas Statement
 hi def link hasKeyword Statement
 hi def link isKeyword Statement
+hi def link asKeyword Statement
 hi def link typeclassDef Statement
 hi def link sumTypeDef Statement
+hi def link defineAlias Statement
+hi def link builtIn Statement
 hi def link unification Statement
 hi def link notUnification Statement
 hi def link whenKeyword Conditional
 hi def link ifKeyword Conditional
-hi def link thenKeyword Conditional
 hi def link importing PreProc
 hi def link importFrom PreProc
 hi def link noImport PreProc
