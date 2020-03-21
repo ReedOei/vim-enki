@@ -27,11 +27,10 @@ syntax keyword importFrom from contained
 syntax match noImport 'do not use'
 syntax match defineAlias 'define alias'
 syntax match builtIn 'built in'
-syntax keyword whereKeyword where
+syntax keyword ruleKeywords where does if
 syntax match typeclassDef 'is a type of'
 syntax match sumTypeDef 'may be'
 syntax keyword whenKeyword when default then
-syntax keyword ifKeyword if
 
 syntax match hole '\<_[A-Z]*[a-z]*\>'
 
@@ -54,7 +53,7 @@ syntax keyword type int bool string
 hi def link operator Operator
 
 hi def link ifItHas Statement
-hi def link whereKeyword Statement
+hi def link ruleKeywords Statement
 hi def link posulateKeyword Statement
 hi def link becauseItHas Statement
 hi def link hasKeyword Statement
@@ -67,7 +66,6 @@ hi def link builtIn Statement
 hi def link unification Statement
 hi def link notUnification Statement
 hi def link whenKeyword Conditional
-hi def link ifKeyword Conditional
 hi def link importing PreProc
 hi def link importFrom PreProc
 hi def link noImport PreProc
