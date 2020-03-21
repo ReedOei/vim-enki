@@ -20,6 +20,7 @@ syntax match becauseItHas 'because it has'
 syntax keyword posulateKeyword postulate
 syntax keyword hasKeyword has
 syntax keyword isKeyword is are
+syntax keyword notKeyword not
 syntax keyword asKeyword as
 syntax keyword importing use nextgroup=moduleId skipwhite
 syntax match moduleId '[A-Za-z][a-zA-Z0-9_]*' skipwhite contained nextgroup=importFrom
@@ -57,6 +58,7 @@ hi def link ruleKeywords Statement
 hi def link posulateKeyword Statement
 hi def link becauseItHas Statement
 hi def link hasKeyword Statement
+hi def link notKeyword Function
 hi def link isKeyword Statement
 hi def link asKeyword Statement
 hi def link typeclassDef Statement
